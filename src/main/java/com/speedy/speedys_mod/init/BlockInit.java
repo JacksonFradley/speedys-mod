@@ -17,10 +17,10 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class BlockInit {
-	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, SpeedysMod.MOD_ID);
+	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, SpeedysMod.ID);
 	public static final DeferredRegister<Item> ITEMS = ItemInit.ITEMS;
 	
-	public static final RegistryObject<Block> EXAMPLE_BLOCK = register("example_block",
+	public static final RegistryObject<Block> FRADLITE_BLOCK = register("fradlite_block",
 			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_PURPLE).strength(1.7f)
 					.sound(SoundType.AMETHYST).requiresCorrectToolForDrops())
 			, object -> () -> new BlockItem(object.get(), new Item.Properties()));

@@ -1,5 +1,5 @@
 {
-	"item.speedys_mod.example_item": "Example Item",
-	"itemGroup.speedys_mod": "Speedys Mod Tab",
-	"block.speedys_mod.example_block": "Example Block"
+	"item.speedys_mod.fradlite": "Fradlite",
+	"block.speedys_mod.fradlite_block": "Fradlite Block",
+	"itemGroup.speedys_mod.speedystab": "Speedy's Tab"
 }
