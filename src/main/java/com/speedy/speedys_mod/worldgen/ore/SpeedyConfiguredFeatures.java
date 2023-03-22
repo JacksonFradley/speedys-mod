@@ -18,17 +18,17 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 
 public class SpeedyConfiguredFeatures {
-	public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_FRADLITE_BLOCK_KEY = registerKey("fradlite_block");
+	public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_FRADLITE_ORE_KEY = registerKey("fradlite_ore");
 	
 	public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 		RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
 		RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 		
-		List<OreConfiguration.TargetBlockState> overworldFradliteBlock = List.of(OreConfiguration.target(stoneReplaceables,
-				BlockInit.FRADLITE_BLOCK.get().defaultBlockState()),
-				OreConfiguration.target(deepslateReplaceables, BlockInit.FRADLITE_BLOCK.get().defaultBlockState()));
+		List<OreConfiguration.TargetBlockState> overworldFradliteOre = List.of(OreConfiguration.target(stoneReplaceables,
+				BlockInit.FRADLITE_ORE.get().defaultBlockState()),
+				OreConfiguration.target(deepslateReplaceables, BlockInit.FRADLITE_ORE.get().defaultBlockState()));
 		
-		register(context, OVERWORLD_FRADLITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldFradliteBlock, 9));
+		register(context, OVERWORLD_FRADLITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFradliteOre, 9));
 		
 	}
 	

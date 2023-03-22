@@ -5,7 +5,6 @@ import java.util.function.Function;
 import com.google.common.base.Supplier;
 import com.speedy.speedys_mod.SpeedysMod;
 
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -24,6 +23,10 @@ public class BlockInit {
 	public static final RegistryObject<Block> FRADLITE_BLOCK = register("fradlite_block",
 			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_PURPLE).strength(1.7f)
 					.sound(SoundType.AMETHYST).requiresCorrectToolForDrops())
+			, object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	
+	public static final RegistryObject<Block> FRADLITE_ORE = register("fradlite_ore",
+			() -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.STONE).strength(2.0f).requiresCorrectToolForDrops())
 			, object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block){

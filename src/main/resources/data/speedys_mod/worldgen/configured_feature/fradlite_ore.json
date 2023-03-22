@@ -6,7 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "speedys_mod:fradlite_block"
+          "Name": "speedys_mod:fradlite_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
@@ -15,7 +15,7 @@
       },
       {
         "state": {
-          "Name": "speedys_mod:fradlite_block"
+          "Name": "speedys_mod:fradlite_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

@@ -1,7 +1,8 @@
 {
 	"replace": false,
 	"values": [
-		"speedys_mod:fradlite_block"
+		"speedys_mod:fradlite_block",
+		"speedys_mod:fradlite_ore"
 	]
 
 }

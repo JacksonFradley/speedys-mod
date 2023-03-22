@@ -43,7 +43,7 @@ public class SpeedysMod {
                 .displayItems((enabledFlags, populator, hasPermissions) -> {
                     populator.accept(BlockInit.FRADLITE_BLOCK.get());
                     populator.accept(ItemInit.FRADLITE.get());
-                    // more items here
+                    populator.accept(BlockInit.FRADLITE_ORE.get());
                 })
         );
     }

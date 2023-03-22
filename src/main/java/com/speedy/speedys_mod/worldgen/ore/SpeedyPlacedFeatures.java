@@ -18,13 +18,13 @@ import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 
 public class SpeedyPlacedFeatures {
 
-    public static final ResourceKey<PlacedFeature> FRADLITE_BLOCK_PLACED_KEY = createKey("fradlite_block_placed");
+    public static final ResourceKey<PlacedFeature> FRADLITE_ORE_PLACED_KEY = createKey("fradlite_ore_placed");
 
 	
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
         
-        register(context, FRADLITE_BLOCK_PLACED_KEY, configuredFeatures.getOrThrow(SpeedyConfiguredFeatures.OVERWORLD_FRADLITE_BLOCK_KEY),
+        register(context, FRADLITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(SpeedyConfiguredFeatures.OVERWORLD_FRADLITE_ORE_KEY),
                 SpeedyOrePlacement.commonOrePlacement(16, // veins per chunk
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-64), VerticalAnchor.absolute(80))));
     }
