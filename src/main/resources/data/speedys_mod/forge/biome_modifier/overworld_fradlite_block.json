@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_overworld",
+  "features": "speedys_mod:fradlite_block_placed",
+  "step": "underground_ores"
+}

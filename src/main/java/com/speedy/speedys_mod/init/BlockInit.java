@@ -5,6 +5,7 @@ import java.util.function.Function;
 import com.google.common.base.Supplier;
 import com.speedy.speedys_mod.SpeedysMod;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -35,4 +36,5 @@ public class BlockInit {
 		ITEMS.register(name, item.apply(obj));
 		return obj;
 	}
+	
 }
