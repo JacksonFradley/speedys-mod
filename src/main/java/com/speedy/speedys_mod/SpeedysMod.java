@@ -31,10 +31,12 @@ public class SpeedysMod {
 		
 		MinecraftForge.EVENT_BUS.register(this);
 		
-        // Register the item to a creative tab
+        
         bus.addListener(this::buildContents);
 	}
 
+	
+	// Event that builds custom creative tab
 	@SubscribeEvent
 	public void buildContents(CreativeModeTabEvent.Register event) {
         event.registerCreativeModeTab(new ResourceLocation(ID, "speedystab"), builder -> 
@@ -46,6 +48,7 @@ public class SpeedysMod {
                     populator.accept(BlockInit.FRADLITE_ORE.get());
                     populator.accept(BlockInit.DEEPSLATE_FRADLITE_ORE.get());
                     populator.accept(ItemInit.FRADLITE_SWORD.get());
+                    populator.accept(ItemInit.FRADLITE_PICKAXE.get());
                 })
         );
     }

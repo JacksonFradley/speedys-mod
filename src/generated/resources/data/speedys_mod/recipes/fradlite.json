@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "speedys_mod:fradlite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "speedys_mod:fradlite"
+  }
+}
