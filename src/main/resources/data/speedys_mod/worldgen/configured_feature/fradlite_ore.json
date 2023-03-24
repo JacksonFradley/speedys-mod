@@ -15,7 +15,7 @@
       },
       {
         "state": {
-          "Name": "speedys_mod:fradlite_ore"
+          "Name": "speedys_mod:deepslate_fradlite_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

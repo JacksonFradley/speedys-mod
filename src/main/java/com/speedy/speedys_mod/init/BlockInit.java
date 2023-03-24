@@ -29,6 +29,10 @@ public class BlockInit {
 			() -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.STONE).strength(2.0f).requiresCorrectToolForDrops())
 			, object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	
+	public static final RegistryObject<Block> DEEPSLATE_FRADLITE_ORE = register("deepslate_fradlite_ore",
+			() -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.DEEPSLATE).strength(2.3f).requiresCorrectToolForDrops())
+			, object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block){
 		return BLOCKS.register(name, block);
 	}

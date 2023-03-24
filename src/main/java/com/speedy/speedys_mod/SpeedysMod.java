@@ -44,6 +44,8 @@ public class SpeedysMod {
                     populator.accept(BlockInit.FRADLITE_BLOCK.get());
                     populator.accept(ItemInit.FRADLITE.get());
                     populator.accept(BlockInit.FRADLITE_ORE.get());
+                    populator.accept(BlockInit.DEEPSLATE_FRADLITE_ORE.get());
+                    populator.accept(ItemInit.FRADLITE_SWORD.get());
                 })
         );
     }

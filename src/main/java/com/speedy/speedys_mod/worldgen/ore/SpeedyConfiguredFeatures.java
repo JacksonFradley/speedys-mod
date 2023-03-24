@@ -26,7 +26,7 @@ public class SpeedyConfiguredFeatures {
 		
 		List<OreConfiguration.TargetBlockState> overworldFradliteOre = List.of(OreConfiguration.target(stoneReplaceables,
 				BlockInit.FRADLITE_ORE.get().defaultBlockState()),
-				OreConfiguration.target(deepslateReplaceables, BlockInit.FRADLITE_ORE.get().defaultBlockState()));
+				OreConfiguration.target(deepslateReplaceables, BlockInit.DEEPSLATE_FRADLITE_ORE.get().defaultBlockState()));
 		
 		register(context, OVERWORLD_FRADLITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFradliteOre, 9));
 		
