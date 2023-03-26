@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "speedys_mod:fradlite"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "BB",
+    "I ",
+    "I "
+  ],
+  "result": {
+    "item": "speedys_mod:fradlite_hoe"
+  }
+}

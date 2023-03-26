@@ -49,6 +49,10 @@ public class SpeedysMod {
                     populator.accept(BlockInit.DEEPSLATE_FRADLITE_ORE.get());
                     populator.accept(ItemInit.FRADLITE_SWORD.get());
                     populator.accept(ItemInit.FRADLITE_PICKAXE.get());
+                    populator.accept(ItemInit.FRADLITE_AXE.get());
+                    populator.accept(ItemInit.FRADLITE_SHOVEL.get());
+                    populator.accept(ItemInit.FRADLITE_HOE.get());
+
                 })
         );
     }

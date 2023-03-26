@@ -54,6 +54,36 @@ public class SpeedyRecipeProvider extends RecipeProvider implements IConditionBu
          .unlockedBy("has_fradlite", inventoryTrigger(ItemPredicate.Builder.item()
                  .of(ItemInit.FRADLITE.get()).build()))
          .save(consumer);
+         
+         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ItemInit.FRADLITE_AXE.get())
+         .define('B', ItemInit.FRADLITE.get())
+         .define('I', Items.STICK)
+         .pattern("BB")
+         .pattern("IB")
+         .pattern("I ")
+         .unlockedBy("has_fradlite", inventoryTrigger(ItemPredicate.Builder.item()
+                 .of(ItemInit.FRADLITE.get()).build()))
+         .save(consumer);
+         
+         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ItemInit.FRADLITE_SHOVEL.get())
+         .define('B', ItemInit.FRADLITE.get())
+         .define('I', Items.STICK)
+         .pattern("B")
+         .pattern("I")
+         .pattern("I")
+         .unlockedBy("has_fradlite", inventoryTrigger(ItemPredicate.Builder.item()
+                 .of(ItemInit.FRADLITE.get()).build()))
+         .save(consumer);
+         
+         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ItemInit.FRADLITE_HOE.get())
+         .define('B', ItemInit.FRADLITE.get())
+         .define('I', Items.STICK)
+         .pattern("BB")
+         .pattern("I ")
+         .pattern("I ")
+         .unlockedBy("has_fradlite", inventoryTrigger(ItemPredicate.Builder.item()
+                 .of(ItemInit.FRADLITE.get()).build()))
+         .save(consumer);
 	}
 	
 	

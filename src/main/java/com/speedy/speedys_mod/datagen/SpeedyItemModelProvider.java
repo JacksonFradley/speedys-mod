@@ -23,6 +23,9 @@ public class SpeedyItemModelProvider extends ItemModelProvider{
 		simpleItem(ItemInit.FRADLITE);
 		handheldItem(ItemInit.FRADLITE_SWORD);
 		handheldItem(ItemInit.FRADLITE_PICKAXE);
+		handheldItem(ItemInit.FRADLITE_AXE);
+		handheldItem(ItemInit.FRADLITE_SHOVEL);
+		handheldItem(ItemInit.FRADLITE_HOE);
 		
 	}
 	

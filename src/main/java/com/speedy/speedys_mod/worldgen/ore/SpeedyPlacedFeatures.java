@@ -12,6 +12,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.heightproviders.TrapezoidHeight;
 import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.placement.PlacementModifier;
@@ -26,7 +27,7 @@ public class SpeedyPlacedFeatures {
         
         register(context, FRADLITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(SpeedyConfiguredFeatures.OVERWORLD_FRADLITE_ORE_KEY),
                 SpeedyOrePlacement.commonOrePlacement(16, // veins per chunk
-                        HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-64), VerticalAnchor.absolute(80))));
+                        HeightRangePlacement.of(TrapezoidHeight.of(VerticalAnchor.aboveBottom(-50), VerticalAnchor.absolute(25), -15))));
     }
     
     

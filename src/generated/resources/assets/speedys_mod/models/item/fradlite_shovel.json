@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "speedys_mod:item/fradlite_shovel"
+  }
+}

@@ -1,9 +1,15 @@
-// 1.19.3	2023-03-24T15:46:32.7506614	Recipes
+// 1.19.3	2023-03-25T18:16:36.8919075	Recipes
 8f3f0d42287d40fb9e8fed6704a80cbe704e657b data/speedys_mod/advancements/recipes/building_blocks/fradlite_block.json
 7bc220abe8b7bcb0a200098b4de822d2b28cbc7a data/speedys_mod/advancements/recipes/combat/fradlite_sword.json
 3dadeb1dbf4b9705fc12fb357f370a30ab9c6b16 data/speedys_mod/advancements/recipes/misc/fradlite.json
+93e816ef881c2377b6c3320a5a78b18c3aa72d3a data/speedys_mod/advancements/recipes/tools/fradlite_axe.json
+e43eda8712b9791688d0ce75ea743952c9ece459 data/speedys_mod/advancements/recipes/tools/fradlite_hoe.json
 23df5966cd369c67e287a337ca8169ba2490c33b data/speedys_mod/advancements/recipes/tools/fradlite_pickaxe.json
+3c1f8f0955de05895a55d1af993e969d734f7d79 data/speedys_mod/advancements/recipes/tools/fradlite_shovel.json
 ed655d8f44b08233ada9fc62c0841c9ed1e29b20 data/speedys_mod/recipes/fradlite.json
+c2cba6a0293669ac1b6b13d5fbba1f683219cf2e data/speedys_mod/recipes/fradlite_axe.json
 eeac6028ae80f582b409e1b81827a75de00dedd0 data/speedys_mod/recipes/fradlite_block.json
+f08ea81ecce4db7138ee8197ab85ab8344a87d7e data/speedys_mod/recipes/fradlite_hoe.json
 3969f52124e77db3546004cbc7220ec58a64ac81 data/speedys_mod/recipes/fradlite_pickaxe.json
+057b7ae4d06803d2d7d0ad209480be36cff1d3f9 data/speedys_mod/recipes/fradlite_shovel.json
 27e64af30486ca0f6e6e057e5fb5748552403404 data/speedys_mod/recipes/fradlite_sword.json
