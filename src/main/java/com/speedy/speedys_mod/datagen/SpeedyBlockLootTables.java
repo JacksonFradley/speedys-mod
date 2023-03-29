@@ -22,6 +22,10 @@ public class SpeedyBlockLootTables extends BlockLootSubProvider{
 	protected void generate() {
 		//blocks that drop self
 		dropSelf(BlockInit.FRADLITE_BLOCK.get());
+		dropSelf(BlockInit.CORRUPTION_BLOCK.get());
+		dropSelf(BlockInit.CORRUPTION_SPAWN_BLOCK.get());
+
+
 		
 		//ores
 		add(BlockInit.FRADLITE_ORE.get(),

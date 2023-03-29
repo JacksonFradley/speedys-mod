@@ -4,6 +4,7 @@ import java.util.function.Function;
 
 import com.google.common.base.Supplier;
 import com.speedy.speedys_mod.SpeedysMod;
+import com.speedy.speedys_mod.block.Corruption_Block;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -32,6 +33,18 @@ public class BlockInit {
 	public static final RegistryObject<Block> DEEPSLATE_FRADLITE_ORE = register("deepslate_fradlite_ore",
 			() -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.DEEPSLATE).strength(2.3f).requiresCorrectToolForDrops())
 			, object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	
+	public static final RegistryObject<Block> CORRUPTION_BLOCK = register("corruption_block",
+			() -> new Corruption_Block(BlockBehaviour.Properties.of(Material.DIRT, MaterialColor.COLOR_PINK).strength(2.3f).randomTicks())
+			, object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	
+	public static final RegistryObject<Block> CORRUPTION_SPAWN_BLOCK = register("corruption_spawn_block",
+			() -> new Block(BlockBehaviour.Properties.of(Material.DIRT, MaterialColor.COLOR_PINK).strength(2.3f).randomTicks())
+			, object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	
+	
+	
+	
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block){
 		return BLOCKS.register(name, block);

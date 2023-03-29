@@ -1,10 +1,13 @@
-// 1.19.3	2023-03-24T15:40:45.598548	Block States: speedys_mod
+// 1.19.3	2023-03-28T17:01:29.4909535	Block States: speedys_mod
+71494fa46c654a539e66a21956edabaaedccd541 assets/speedys_mod/blockstates/corruption_block.json
 926e666714117524c92e62b5a59b3fecd3c7cf86 assets/speedys_mod/blockstates/deepslate_fradlite_ore.json
 a2fc1c40a8877340036cfdbddb8c4d1e33adc216 assets/speedys_mod/blockstates/fradlite_block.json
 72c275cd7457303970778d8e0f9e5ec80ee9f7f9 assets/speedys_mod/blockstates/fradlite_ore.json
+cc211d98aa697127ba7a574edd9a4b8169b999e1 assets/speedys_mod/models/block/corruption_block.json
 d10eb125e90bb2897ec7afdd9ef16b3b4bd539e1 assets/speedys_mod/models/block/deepslate_fradlite_ore.json
 b0dddde6ef12402de03a0160a6aa5c52efefb2f6 assets/speedys_mod/models/block/fradlite_block.json
 24f30d42bc3a2b0a8ad21541af6764b54e4e0696 assets/speedys_mod/models/block/fradlite_ore.json
+130ea4a988d5ad398fb531234c0059430a89bc19 assets/speedys_mod/models/item/corruption_block.json
 b17c9ed0f4b96fd385c63e800116037a4bad1c35 assets/speedys_mod/models/item/deepslate_fradlite_ore.json
 8d194ed825a22de2b1917f60ec735af1890abdc3 assets/speedys_mod/models/item/fradlite_block.json
 4c74163bbe2472490f87adf88a4bb6c1f376ca7d assets/speedys_mod/models/item/fradlite_ore.json

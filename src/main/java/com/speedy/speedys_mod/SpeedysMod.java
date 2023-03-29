@@ -1,5 +1,6 @@
 package com.speedy.speedys_mod;
 
+import com.speedy.speedys_mod.block.Corruption_Block;
 import com.speedy.speedys_mod.init.BlockInit;
 import com.speedy.speedys_mod.init.ItemInit;
 
@@ -52,6 +53,9 @@ public class SpeedysMod {
                     populator.accept(ItemInit.FRADLITE_AXE.get());
                     populator.accept(ItemInit.FRADLITE_SHOVEL.get());
                     populator.accept(ItemInit.FRADLITE_HOE.get());
+                    populator.accept(BlockInit.CORRUPTION_BLOCK.get());
+                    populator.accept(BlockInit.CORRUPTION_SPAWN_BLOCK.get());
+
 
                 })
         );

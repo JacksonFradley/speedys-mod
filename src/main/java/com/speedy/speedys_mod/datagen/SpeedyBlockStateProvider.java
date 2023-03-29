@@ -19,7 +19,12 @@ public class SpeedyBlockStateProvider extends BlockStateProvider{
 	protected void registerStatesAndModels() {
 		blockWithItem(BlockInit.FRADLITE_BLOCK);
 		blockWithItem(BlockInit.FRADLITE_ORE);
-		blockWithItem(BlockInit.DEEPSLATE_FRADLITE_ORE);		
+		blockWithItem(BlockInit.DEEPSLATE_FRADLITE_ORE);
+		blockWithItem(BlockInit.CORRUPTION_BLOCK);	
+		blockWithItem(BlockInit.CORRUPTION_SPAWN_BLOCK);	
+
+
+
 	}
 	
 	private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
