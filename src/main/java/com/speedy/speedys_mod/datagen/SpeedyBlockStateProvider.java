@@ -21,7 +21,11 @@ public class SpeedyBlockStateProvider extends BlockStateProvider{
 		blockWithItem(BlockInit.FRADLITE_ORE);
 		blockWithItem(BlockInit.DEEPSLATE_FRADLITE_ORE);
 		blockWithItem(BlockInit.CORRUPTION_BLOCK);	
-		blockWithItem(BlockInit.CORRUPTION_SPAWN_BLOCK);	
+		blockWithItem(BlockInit.CORRUPTION_SPAWN_BLOCK);
+		blockWithItem(BlockInit.DEACTIVATED_CORRUPTION_BLOCK);	
+		blockWithItem(BlockInit.CORRUPTION_BLOCK_BODY);	
+		blockWithItem(BlockInit.SURFACE_CORRUPTION_BLOCK);	
+
 
 
 

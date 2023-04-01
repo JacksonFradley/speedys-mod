@@ -5,6 +5,8 @@ import java.util.function.Function;
 import com.google.common.base.Supplier;
 import com.speedy.speedys_mod.SpeedysMod;
 import com.speedy.speedys_mod.block.Corruption_Block;
+import com.speedy.speedys_mod.block.Corruption_Spawn_Block;
+import com.speedy.speedys_mod.block.Corruption_Block_Body;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -39,11 +41,20 @@ public class BlockInit {
 			, object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	
 	public static final RegistryObject<Block> CORRUPTION_SPAWN_BLOCK = register("corruption_spawn_block",
+			() -> new Corruption_Spawn_Block(BlockBehaviour.Properties.of(Material.DIRT, MaterialColor.COLOR_GREEN).strength(2.3f))
+			, object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	
+	public static final RegistryObject<Block> DEACTIVATED_CORRUPTION_BLOCK = register("deactivated_corruption_block",
+			() -> new Block(BlockBehaviour.Properties.of(Material.DIRT, MaterialColor.COLOR_LIGHT_GRAY).strength(2.3f))
+			, object -> () -> new BlockItem(object.get(), new Item.Properties()));
+	
+	public static final RegistryObject<Block> SURFACE_CORRUPTION_BLOCK = register("surface_corruption_block",
 			() -> new Block(BlockBehaviour.Properties.of(Material.DIRT, MaterialColor.COLOR_PINK).strength(2.3f).randomTicks())
 			, object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	
-	
-	
+	public static final RegistryObject<Block> CORRUPTION_BLOCK_BODY = register("corruption_block_body",
+			() -> new Corruption_Block_Body(BlockBehaviour.Properties.of(Material.DIRT, MaterialColor.COLOR_PINK).strength(2.3f).randomTicks())
+			, object -> () -> new BlockItem(object.get(), new Item.Properties()));
 	
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block){

@@ -1,5 +1,9 @@
-// 1.19.3	2023-03-28T17:01:29.4879612	Loot Tables
+// 1.19.3	2023-03-29T20:14:18.7356247	Loot Tables
 f2bb439a10d5330aee54b4efe1b934eac8798f11 data/speedys_mod/loot_tables/blocks/corruption_block.json
+1b708890d90a372008add8cb3a469a89c88f0f91 data/speedys_mod/loot_tables/blocks/corruption_block_body.json
+a8c676049815b66c6b71b7966a4c0df52e57eb28 data/speedys_mod/loot_tables/blocks/corruption_spawn_block.json
+047641ce7190e0e0f6b2ccd257f5ba1e9814198b data/speedys_mod/loot_tables/blocks/deactivated_corruption_block.json
 2cac7a2e75e6000945077d1df22c3b43d2cd6372 data/speedys_mod/loot_tables/blocks/deepslate_fradlite_ore.json
 f8f9412d16c4db614488f414717a3a222d67151c data/speedys_mod/loot_tables/blocks/fradlite_block.json
 bbd514a0698401e6d4a2841135493b011c8b11f8 data/speedys_mod/loot_tables/blocks/fradlite_ore.json
+d17ecf0073c1f45128421b4c53405a5b26a904a8 data/speedys_mod/loot_tables/blocks/surface_corruption_block.json

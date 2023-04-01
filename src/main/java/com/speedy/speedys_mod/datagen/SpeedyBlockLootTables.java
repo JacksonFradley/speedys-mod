@@ -24,6 +24,10 @@ public class SpeedyBlockLootTables extends BlockLootSubProvider{
 		dropSelf(BlockInit.FRADLITE_BLOCK.get());
 		dropSelf(BlockInit.CORRUPTION_BLOCK.get());
 		dropSelf(BlockInit.CORRUPTION_SPAWN_BLOCK.get());
+		dropSelf(BlockInit.DEACTIVATED_CORRUPTION_BLOCK.get());
+		dropSelf(BlockInit.CORRUPTION_BLOCK_BODY.get());
+		dropSelf(BlockInit.SURFACE_CORRUPTION_BLOCK.get());
+
 
 
 		

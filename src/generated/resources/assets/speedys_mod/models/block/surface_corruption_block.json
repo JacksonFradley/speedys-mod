@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "speedys_mod:block/surface_corruption_block"
+  }
+}

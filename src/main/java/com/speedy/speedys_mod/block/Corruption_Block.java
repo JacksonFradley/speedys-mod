@@ -30,27 +30,38 @@ public class Corruption_Block extends Block{
 	
 
 	@Override
-	public void randomTick(BlockState blockstate, ServerLevel level, BlockPos pos, RandomSource p_222957_) {
-		// TODO Auto-generated method stub
-		for(Direction dir : Direction.values()){
-			
-			  BlockPos neighbor = pos.relative(dir);
-			  BlockState adjacentState = level.getBlockState(neighbor);
-			  if(adjacentState.getBlock() != this &&
-					  adjacentState.getBlock() != Blocks.AIR &&
-					  adjacentState.getBlock() != Blocks.WATER &&
-					  adjacentState.getBlock() != Blocks.LAVA &&
-					  adjacentState.getBlock() != BlockInit.FRADLITE_BLOCK.get()){//checking if this is already our block
-				  int chance = rand.nextInt(20);
-				  if(chance == 19) {
-					  //var fradBlock = new Fradlite_Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_PURPLE).strength(1.7f)
-					  //		.sound(SoundType.AMETHYST).requiresCorrectToolForDrops());
-					  level.setBlock(neighbor, BlockInit.FRADLITE_BLOCK.get().defaultBlockState(), 3);
-				  }
-				  else {
-					  level.setBlock(neighbor, blockstate, 3);
-				  }
-			  }
+	public void randomTick(BlockState blockstate, ServerLevel level, BlockPos pos, RandomSource randSrc) {
+		Direction dir = Direction.getRandom(randSrc);
+		trySpread(dir, 0, blockstate, level, pos, randSrc);	
+	}
+	
+	public void trySpread(Direction dir, int tries, BlockState blockstate, ServerLevel level, BlockPos pos, RandomSource randSrc) {
+		if(tries < 7) {
+			BlockPos neighbor = pos.relative(dir);
+			BlockState adjacentState = level.getBlockState(neighbor);
+			if(adjacentState.getBlock() != this &&
+				  adjacentState.getBlock() != Blocks.AIR &&
+				  adjacentState.getBlock() != Blocks.WATER &&
+				  adjacentState.getBlock() != Blocks.LAVA &&
+				  adjacentState.getBlock() != BlockInit.DEACTIVATED_CORRUPTION_BLOCK.get() &&
+				  adjacentState.getBlock() != BlockInit.CORRUPTION_SPAWN_BLOCK.get()
+
+				  ){
+			  
+				  level.setBlock(neighbor, blockstate, 3);
+				  level.setBlock(pos, BlockInit.DEACTIVATED_CORRUPTION_BLOCK.get().defaultBlockState(), 3);
 			}
+			else if(tries < 4){
+				trySpread(dir.getClockWise(Direction.Axis.Y), tries + 1, blockstate, level, pos, randSrc);
+			}
+			else if(tries < 5) {
+				trySpread(Direction.UP, tries + 1, blockstate, level, pos, randSrc);
+			}
+			else {
+				trySpread(Direction.DOWN, tries + 1, blockstate, level, pos, randSrc);
+			}
+			level.setBlock(pos, BlockInit.DEACTIVATED_CORRUPTION_BLOCK.get().defaultBlockState(), 3);
+
+		}
 	}
 }

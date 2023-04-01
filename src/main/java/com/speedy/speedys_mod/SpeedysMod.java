@@ -21,6 +21,15 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod.EventBusSubscriber(modid = SpeedysMod.ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class SpeedysMod {
 	
+	public enum dirs {
+		DOWN,
+		UP,
+		NORTH,
+		EAST,
+		SOUTH,
+		WEST,
+	}
+	
 	public static final String ID = "speedys_mod";
 	
 	public SpeedysMod() {
